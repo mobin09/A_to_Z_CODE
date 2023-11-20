@@ -12,7 +12,9 @@ import java.io.IOException;
 
 @WebServlet("/day1")
 public class Day1 extends HttpServlet{
-     @Override
+     private static final long serialVersionUID = 1L;
+
+	@Override
      public void doGet(HttpServletRequest req, HttpServletResponse res)  throws ServletException{
     	   res.setContentType("text/html");
     	   

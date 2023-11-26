@@ -45,7 +45,7 @@ public class Day4 extends HttpServlet {
 		    	
 		    	out.println("<tr style='border 1px solid black> <td>"+  name +"</td>" + "<td>"+value + "</td> </tr>");
 		    	
-		    	System.out.println("name:" + name + " value:" + value);
+		    	System.out.println("NAME:" + name + " VALUE:" + value);
 		    }
 		    
 		    

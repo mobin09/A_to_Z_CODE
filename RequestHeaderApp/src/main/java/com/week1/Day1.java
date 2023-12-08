@@ -11,7 +11,7 @@ import java.io.IOException;
 
 
 @WebServlet("/day1")
-public class Day1 extends HttpServlet{
+ class Day1 extends HttpServlet{
      private static final long serialVersionUID = 1L;
 
 	@Override

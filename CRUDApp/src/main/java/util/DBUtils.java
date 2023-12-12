@@ -9,8 +9,6 @@ import java.io.IOException;
 
 public class DBUtils {
     
-	
-    
     public Connection getConnection() {
     	Connection con = null;  
     	

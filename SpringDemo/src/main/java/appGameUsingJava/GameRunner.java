@@ -2,7 +2,7 @@ package appGameUsingJava;
 
 public class GameRunner {
 	private Games game;
-	GameRunner(Games game){
+	public GameRunner(Games game){
 		this.game = game;
 	}
 	

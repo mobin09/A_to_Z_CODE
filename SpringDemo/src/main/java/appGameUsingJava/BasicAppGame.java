@@ -6,7 +6,8 @@ public class BasicAppGame {
 		// TODO Auto-generated method stub
           MarioGame mario = new MarioGame();
           SuperContra supGame = new SuperContra();
-         GameRunner gameRunner =  new GameRunner(supGame);
+          PacMan pacMan = new PacMan();
+         GameRunner gameRunner =  new GameRunner(pacMan);
          gameRunner.run();
 	}
 

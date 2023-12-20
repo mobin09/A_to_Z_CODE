@@ -10,10 +10,6 @@ import org.springframework.context.annotation.Configuration;
 public class GameLauncher4 {
 	
 	
-//	 @Bean
-//	  public GameRunner runner(GameConsole game) {
-//		 return new GameRunner(game);
-//	 }
       public static void main(String[] args) {
     	 
     	  try(AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(GameLauncher4.class)){

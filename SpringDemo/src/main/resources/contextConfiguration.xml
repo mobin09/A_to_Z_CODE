@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> 
+	    <!-- bean definitions here -->
+	    <bean id ="name" class="java.lang.String">
+	       <constructor-arg value="Mobin Arshad"/>
+	    </bean>
+	    
+	    <bean id="age" class="java.lang.Integer">
+	       <constructor-arg value="25" />
+	    </bean>
+	   <!--  <context:component-scan base-package="appGameUsingSpring2"></context:component-scan> -->
+	    
+	    <bean id="MySqlDataService" class="businessCalculation.MySqlDataService" />
+	    <bean id="pacManGame" class="appGameUsingSpring2.PacMan" />
+	    <bean id="gameRunner" class="appGameUsingSpring2.GameRunner">
+	        <constructor-arg ref="pacManGame" />
+	    </bean> 
+         	
+</beans>

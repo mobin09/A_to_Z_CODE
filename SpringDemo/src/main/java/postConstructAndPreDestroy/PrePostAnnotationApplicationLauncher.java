@@ -52,8 +52,8 @@ public class PrePostAnnotationApplicationLauncher {
 				PrePostAnnotationApplicationLauncher.class)) {
 			//Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 			
-		//SomeClass someClass = context.getBean(SomeClass.class);
-		//someClass.doSomeThing();
+		  //SomeClass someClass = context.getBean(SomeClass.class);
+		 //someClass.doSomeThing();
 			
 
 		}

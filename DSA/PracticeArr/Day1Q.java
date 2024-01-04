@@ -1,4 +1,4 @@
-package Practice_Array;
+package PracticeArr;
 import java.util.Scanner;
 
 public class Day1Q {

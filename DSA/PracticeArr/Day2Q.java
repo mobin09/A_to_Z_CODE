@@ -1,4 +1,4 @@
-package Practice_Array;
+package PracticeArr;
 
 public class Day2Q {
 

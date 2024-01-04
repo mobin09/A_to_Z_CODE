@@ -1,4 +1,4 @@
-package Practice_Array;
+package PracticeArr;
 class Day2Q02{
   public static void main(String[] args) {
       String ransom = "aa";

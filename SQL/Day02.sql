@@ -7,8 +7,8 @@ CREATE TABLE vehicles(
    phoneNumber int,
    PRIMARY KEY(vehicle_ID)
    );
+	show tables;
    desc vehicles;
-   show tables;
    show columns from vehicles;
    
    CREATE TABLE Owner(

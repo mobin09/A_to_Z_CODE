@@ -12,6 +12,8 @@ public class UpperCaseConversion {
 
     public static void main(String[] args){
         String str = "i love programming";
+           String a =  str.substring(1);
+           System.out.println(a);
         String[] s = str.split(" ");
         //System.out.println(Arrays.toString(s));
         String fString = "";

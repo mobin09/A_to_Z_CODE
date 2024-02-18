@@ -20,9 +20,17 @@ public class VowelsReverse {
             char f = ch[i];
             char l = ch[j];
             
-            if(arr.contains(f)){}
+            if(arr.contains(f)){
+              
+                  if(arr.contains(l)){
+                    //  swap(ch, i, j);
+                     
+                  }
+              
+            }
 
-
+            i++;
+            j--;
 
         }
      }

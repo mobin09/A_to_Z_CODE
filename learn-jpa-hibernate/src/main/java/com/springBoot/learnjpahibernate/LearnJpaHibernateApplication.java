@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
-@SpringBootApplication(scanBasePackages = { "course.jdbc" })
+@SpringBootApplication
 public class LearnJpaHibernateApplication {
 
 	public static void main(String[] args) {

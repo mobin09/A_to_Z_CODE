@@ -1,13 +1,14 @@
 package com.springBoot.learnjpahibernate.course;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity(name = "table_name")
+@Entity //@Entity(name = "table_name")
 public class Course {
     @Id
 	private long id;
-    
+    @Column(name = "name")
     private String name;
     private String course;
     

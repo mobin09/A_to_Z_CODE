@@ -1,7 +1,13 @@
 package com.springBoot.learnjpahibernate.course;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity(name = "table_name")
 public class Course {
-    private long id;
+    @Id
+	private long id;
+    
     private String name;
     private String course;
     

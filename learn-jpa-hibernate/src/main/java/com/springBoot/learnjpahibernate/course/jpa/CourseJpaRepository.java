@@ -10,7 +10,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
 @Repository
-@Transactional//whenever we want to execute query with JPA transaction should be enabled
+@Transactional //whenever we want to execute query with JPA transaction should be enabled
 public class CourseJpaRepository {
      @PersistenceContext  // here more specific is PersistenceContext @Autowired will also works 
 	private EntityManager entityManager;  // search it from google

@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-     <h1>You Are logged in</h1>
+     <h1 style = "color: red; text-align:center;">Welcome to the login page</h1>
 </body>
 </html>

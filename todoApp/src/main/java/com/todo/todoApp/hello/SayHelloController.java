@@ -27,12 +27,19 @@ public class SayHelloController {
 	}
 	
 	//@ResponseBody
-	@RequestMapping("/say-hello-jsp")
+	@RequestMapping("/admin")
 	public String sayHelloToJSP() {
 		return "LOGIN/login";
 	}
 	
 	// /src/main/resources/META-INF/resources/WEB-INF/jsp
+	@RequestMapping("/home")
+	public String home() {
+		return "Hello";
+	}
+	
+	
+	
 	
 	
 }

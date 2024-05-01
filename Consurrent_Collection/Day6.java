@@ -41,6 +41,9 @@ public class Day6 extends Thread{
            Thread.sleep(3000);
        }
 
+       //git config --global --add safe.directory E:\workspace\A_to_Z_CODE
+       //E:\workspace\A_to_Z_CODE
+
        System.out.println(chmap);
 
        }

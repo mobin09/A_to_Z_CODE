@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-     <h1 style = "color: red; text-align:center;">Welcome to the login page</h1>
+     <!--Whenever we are passing the model from control from jsp we can get it using the expression language like ${modelNmae} -->
+     <h1 style = "color: red; text-align:center;">Welcome to the login page ${name} </h1>
 </body>
 </html>

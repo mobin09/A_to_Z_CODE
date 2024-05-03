@@ -1,0 +1,13 @@
+ 1). Creating the todos
+    id
+    username
+    description
+    targetdate
+    isDone
+   
+    getter and setter of the todos
+   
+ 2).todos service
+
+ 3). Controller of todos 
+ 4). List out all todos to the ListTodos.jsp page      

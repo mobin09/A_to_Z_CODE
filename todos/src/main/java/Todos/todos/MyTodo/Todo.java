@@ -45,15 +45,20 @@ public class Todo {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public LocalDate getTargetDone() {
-		return targetDate;
-	}
-	public void setTargetDone(LocalDate targetDate) {
-		this.targetDate = targetDate;
-	}
+	
 	public boolean getIsDone() {
 		return isDone;
 	}
+	public LocalDate getTargetDate() {
+		return targetDate;
+	}
+
+
+	public void setTargetDate(LocalDate targetDate) {
+		this.targetDate = targetDate;
+	}
+
+
 	public void setIsDone(boolean isDone) {
 		this.isDone = isDone;
 	}

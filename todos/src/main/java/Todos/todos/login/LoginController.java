@@ -20,13 +20,13 @@ public class LoginController {
     }
 	
 	@RequestMapping(value = "/login", method=RequestMethod.POST)
-	public String loginbyPost(@RequestParam String email,  @RequestParam String password, ModelMap model) {
+	public String loginbyPost(@RequestParam String name,  @RequestParam String password, ModelMap model) {
 		
-		if(loginService.isValidUser(email, password)) {
-			model.put("name", email);
+		if(loginService.isValidUser(name, password)) {
+			model.put("name", name);
 			return "Welcome";
 		}
-		
+		model.put("message", "Please Enter the right credentials");
 		return "Login";
 		
 		

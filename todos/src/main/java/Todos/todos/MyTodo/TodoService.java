@@ -3,6 +3,7 @@ package Todos.todos.MyTodo;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Stream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +24,8 @@ public class TodoService {
 
 	public List<Todo> findByName(String name) {
 		logger.debug("MyTodos are " + todos);
-		return todos;
+		Predicate<Todo> td = (todo) -> todo.getUserName().equalsIgnoreCase(name);
+		return todos.stream().filter(td).toList();
 	}
 
 	public void addTodo(String username, String description, LocalDate dt, boolean isDone) {

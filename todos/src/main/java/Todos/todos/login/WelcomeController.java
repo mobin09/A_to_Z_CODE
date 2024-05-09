@@ -1,6 +1,9 @@
 package Todos.todos.login;
 
+import org.springframework.security.core.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,10 +18,15 @@ public class WelcomeController {
 //	private LoginAuthService loginService;
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String loginbyGet(ModelMap model) {
-		model.put("name", "Mobin Arshad");
+	public String goToWelcomePage(ModelMap model) {
+		model.put("name", getLoggedInUser());
     	return "Welcome";
     }
+	
+	private String getLoggedInUser() {
+	 Authentication authentication =  SecurityContextHolder.getContext().getAuthentication();
+	 return authentication.getName();
+	}
 	
 //	@RequestMapping(value = "/login", method=RequestMethod.POST)
 //	public String loginbyPost(@RequestParam String name,  @RequestParam String password, ModelMap model) {

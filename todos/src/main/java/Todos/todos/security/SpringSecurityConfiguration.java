@@ -22,11 +22,19 @@ public class SpringSecurityConfiguration {
 	 Function<String, String> passEcncoder = input -> passwordEncoderFun().encode(input);	
 	 UserDetails userDetails = 	User.builder()
 			 .passwordEncoder(passEcncoder)
-			 .username("User")
+			 .username("mobink09")
 			 .password("Admin")
 			 .roles("USER", "ADMIN")
-			 .build();	 
-	   return new InMemoryUserDetailsManager(userDetails);	  
+			 .build();	
+	 
+	   UserDetails userDetails2 = User.builder()
+			   .passwordEncoder(passEcncoder)
+			   .username("Dummy")
+			   .password("Dummy")
+			   .roles("USER", "ADMIN")
+			   .build();
+	 
+	   return new InMemoryUserDetailsManager(userDetails, userDetails2);	  
 	}
 	
 	

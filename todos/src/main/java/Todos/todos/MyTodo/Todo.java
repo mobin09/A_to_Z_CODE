@@ -2,8 +2,12 @@ package Todos.todos.MyTodo;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Size;
 
+@Entity
 public class Todo {
     /* id
      * userName
@@ -11,7 +15,8 @@ public class Todo {
      * targetDone
      * done
      */
-	
+	@Id
+	@GeneratedValue
 	private int id;
 	private String userName;
 	

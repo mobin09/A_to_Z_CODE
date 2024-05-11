@@ -18,17 +18,25 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 import jakarta.validation.Valid;
 
-//@Controller
+@Controller
 @SessionAttributes("name")
-public class TodoController {
+public class TodoControllerJPA {
 	
 	private Logger logger = LoggerFactory.getLogger(getClass());
-    @Autowired
+   
 	private TodoService todos;
+    private TodoRepository todoRepositoryService;
+    public TodoControllerJPA(TodoService todos, TodoRepository todoRepositoryService) {
+    	this.todoRepositoryService = todoRepositoryService;
+    	this.todos = todos;
+    }
+   
+    
 	@RequestMapping(value = "/list-todos", method=RequestMethod.GET)
 	public String allTodos(ModelMap model) {
 		String username = getLoggedInUser();
-		List<Todo> td = todos.findByName(username);
+	
+		List<Todo> td = todoRepositoryService.findByuserName(username);
 		model.addAttribute("todos", td);
 		
 		return "ListTodos";
@@ -50,18 +58,23 @@ public class TodoController {
 		
 		logger.debug("Description of todo::" +  todo.getDescription());
 		String username = getLoggedInUser();
-		todos.addTodo(username, todo.getDescription(), todo.getTargetDate(), false);
+		todo.setUserName(username);
+		todoRepositoryService.save(todo);
+		//todos.addTodo(username, todo.getDescription(), todo.getTargetDate(), todo.getIsDone());
 		return "redirect:list-todos";
 	}
 	
 	@RequestMapping(value = "delete-todo", method=RequestMethod.GET)
 	public String deleteTodo(@RequestParam int id) {
-		todos.deleteTodo(id);
+		//todos.deleteTodo(id);
+		todoRepositoryService.deleteById(id);
 		return "redirect:list-todos";
 	}
 	@RequestMapping(value ="update-todo", method=RequestMethod.GET)
 	public String showUpdateTodo(@RequestParam int id, ModelMap model) {
-		Todo updateTd = todos.findByID(id);
+		Todo updateTd =  todoRepositoryService.findById(id).get();
+		//Todo updateTd = todos.findByID(id);
+		
 		model.put("todo", updateTd);
 		return "Todo";
 	}
@@ -72,7 +85,8 @@ public class TodoController {
 			return "Todo";
 		}
 		todo.setUserName(getLoggedInUser());
-		todos.updateTodo(todo);
+		todoRepositoryService.save(todo);
+		//todos.updateTodo(todo);
 		return "redirect:list-todos";
 	}
 	

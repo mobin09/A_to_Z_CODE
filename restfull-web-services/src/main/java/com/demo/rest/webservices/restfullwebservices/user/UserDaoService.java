@@ -23,9 +23,15 @@ public class UserDaoService {
     }
     
     public User findById(Integer id) {
-    	User u = new User(1, "No data is available for this id", LocalDate.now());
-    	return users.stream().filter(user -> user.getId().equals(id)).findFirst().orElse(u);
+    	return users.stream().filter(user -> user.getId().equals(id)).findFirst().orElse(null);
     }
+    
+    public User save(User user) {
+    	user.setId(++count);
+    	users.add(user);
+    	return user;
+    }
+    
     
     
     

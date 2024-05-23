@@ -1,5 +1,5 @@
 .metadata/
-metadata/*
+.metadata/*
 RequestHeaderApp/.settings/
 Servers/
 .metadata
@@ -38,7 +38,7 @@ target/
 *.iws
 *.iml
 *.ipr
-
+*.properties
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/

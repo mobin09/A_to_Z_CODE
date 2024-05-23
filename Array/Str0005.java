@@ -7,7 +7,8 @@ public class Str0005 {
       System.out.println(address);
 
       int[] arr = {6,4,2,1,0};
-      Arrays.stream(arr).sorted().forEach(System.out::println);
+      int[] a =Arrays.stream(arr).sorted().toArray();
+      
 
     }
 }

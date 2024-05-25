@@ -37,4 +37,14 @@ public class VersionPersonController {
 		return new Personv2(new Name("Nadim", "Arshad"));
 	}
 	
+	@GetMapping(path = "/person", produces = "application/vnd.company.app-v1+json")
+	public Personv1 getPersonv1RequestAcceptHeader() {
+		return new Personv1("Jashim Arshad");
+	}
+	
+	@GetMapping(path = "/person", produces = "application/vnd.company.app-v2+json")
+	public Personv2 getPersonv2RequestAcceptHeader() {
+		return new Personv2(new Name("Jashim", "Arshad"));
+	}
+	
 }

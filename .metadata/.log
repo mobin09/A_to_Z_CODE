@@ -6520,3 +6520,19 @@ Contains: Missing org.webjars:swagger-ui:jar:sources:5.10.3
 !MESSAGE Could not resolve artifact org.webjars:swagger-ui:jar:sources:5.10.3
 !SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-05-23 21:47:22.433
 !MESSAGE Missing org.webjars:swagger-ui:jar:sources:5.10.3
+!SESSION 2024-05-24 22:23:40.470 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=21.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/mobin/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.jee.product -keyring /Users/mobin/.eclipse_keyring
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-24 22:23:42.026
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-24 22:23:42.150
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-24 22:23:43.082
+!MESSAGE Logback config file: /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml

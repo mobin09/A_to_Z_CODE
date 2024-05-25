@@ -3448,3 +3448,82 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.webjars:s
 2024-05-23 23:00:57,376 [Worker-43: Launching RestfullWebServicesApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
 2024-05-23 23:00:57,377 [Worker-43: Launching RestfullWebServicesApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
 2024-05-23 23:00:57,378 [Worker-43: Launching RestfullWebServicesApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 22:23:46,163 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-24 22:41:17,723 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 22:41:17,732 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 22:41:17,735 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 22:41:40,194 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 22:41:40,195 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 22:41:40,197 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 22:42:51,128 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 22:42:51,129 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 22:42:51,133 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 22:43:07,355 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 22:43:07,356 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 22:43:07,357 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 22:43:40,553 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 22:43:40,554 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 22:43:40,556 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 22:43:55,547 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 22:43:55,549 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 22:43:55,551 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 22:44:07,858 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 22:44:07,859 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 22:44:07,860 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 22:44:39,694 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 22:44:39,696 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 22:44:39,698 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 22:51:01,137 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 22:51:01,139 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 22:51:01,141 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 22:51:55,227 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 22:51:55,229 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 22:51:55,231 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:00:13,836 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:00:13,837 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:00:13,839 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:00:41,819 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:00:41,821 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:00:41,822 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:00:57,903 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:00:57,905 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:00:57,908 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:01:57,012 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:01:57,014 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:01:57,020 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:02:35,282 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:02:35,284 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:02:35,285 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:02:41,660 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:02:41,661 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:02:41,663 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:03:03,181 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:03:03,182 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:03:03,183 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:03:51,789 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:03:51,790 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:03:51,791 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:05:06,794 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:05:06,795 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:05:06,796 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:07:54,775 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:07:54,777 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:07:54,779 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:33:05,979 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:33:05,986 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:33:05,989 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:33:36,253 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:33:36,255 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:33:36,256 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:34:31,198 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:34:31,200 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:34:31,202 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:35:07,431 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:35:07,432 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:35:07,433 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:35:51,138 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:35:51,140 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:35:51,141 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources
+2024-05-24 23:57:30,471 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-05-24 23:57:30,474 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-05-24 23:57:30,476 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/mobin/CODE_PRACTICE/A_to_Z_CODE/restfull-web-services/src/test/resources

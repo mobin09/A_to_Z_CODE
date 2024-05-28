@@ -29,6 +29,5 @@ public class SomeBean {
 	public String getField4() {
 		return field4;
 	}
-     
-     
+          
 }

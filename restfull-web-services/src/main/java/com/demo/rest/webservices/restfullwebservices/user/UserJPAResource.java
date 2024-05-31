@@ -2,6 +2,8 @@ package com.demo.rest.webservices.restfullwebservices.user;
 
 import java.net.URI;
 import java.util.List;
+import java.util.Optional;
+
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.EntityModel;
@@ -16,29 +18,33 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.demo.rest.webservices.restfullwebservices.jpa.UserRepository;
+
 import jakarta.validation.Valid;
 
-//@RestController
-public class UserResource {
+@RestController
+public class UserJPAResource {
    
 	@Autowired
 	private UserDaoService userService;
+	@Autowired
+	private UserRepository repository;
 	
 	// GET /users
 	@GetMapping(path = "/users")
 	public List<User> getAllusers() {
-		return userService.getAllUsers();
+		return repository.findAll();
 	}
 	
 	
 	// GET /users/{id}
 	@GetMapping(path = "/users/{id}")
 	public EntityModel<User> getUser(@PathVariable Integer id) throws UserNotAvailableException {
-		User user = userService.findById(id);
-		if(user == null) {
+		Optional<User> user = repository.findById(id);
+		if(user.isEmpty()) {
 			throw new UserNotAvailableException("id:" + id);
 		}
-		EntityModel<User> entityModel = EntityModel.of(user);
+		EntityModel<User> entityModel = EntityModel.of(user.get());
 		WebMvcLinkBuilder link = linkTo(methodOn(this.getClass()).getAllusers());
 		entityModel.add(link.withRel("all-users"));
 		return entityModel;
@@ -48,7 +54,7 @@ public class UserResource {
 	// POST /users
 	@PostMapping("/users")
 	public ResponseEntity<User> createUser(@Valid @RequestBody User user) {
-	  User saved = userService.save(user);
+	  User saved = repository.save(user);
 	  URI location  = ServletUriComponentsBuilder.fromCurrentRequest()
 			          .path("/{id}")
 			          .buildAndExpand(saved.getId())
@@ -60,7 +66,7 @@ public class UserResource {
 	//DELETE /users/{id}
 	@DeleteMapping("users/{id}")
 	public void deleteUser(@PathVariable Integer id) {
-		 userService.deleteById(id);
+		repository.deleteById(id);
 	}
 	
 	

@@ -18,7 +18,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.demo.rest.webservices.restfullwebservices.jpa.PostRepository;
 import com.demo.rest.webservices.restfullwebservices.jpa.UserRepository;
+import com.demo.rest.webservices.restfullwebservices.posts.Post;
 
 import jakarta.validation.Valid;
 
@@ -29,6 +31,8 @@ public class UserJPAResource {
 	private UserDaoService userService;
 	@Autowired
 	private UserRepository repository;
+	@Autowired
+	private PostRepository postRepository;
 	
 	// GET /users
 	@GetMapping(path = "/users")
@@ -70,4 +74,34 @@ public class UserJPAResource {
 	}
 	
 	
+	@GetMapping("/users/{id}/posts")
+	public List<Post> getPostofUser(@PathVariable Integer id) throws UserNotAvailableException{
+		Optional<User> user = repository.findById(id);
+		
+		if(user.isEmpty()) {
+			throw new UserNotAvailableException("id:" + id);
+		}
+		return user.get().getPosts();	
+	}
+	
+	@PostMapping("/users/{id}/posts")
+	public ResponseEntity<Post> postsData(@PathVariable Integer id ,@Valid @RequestBody Post post) throws UserNotAvailableException {
+Optional<User> user = repository.findById(id);
+		
+		if(user.isEmpty()) {
+			throw new UserNotAvailableException("id:" + id);
+		}
+		
+		post.setUser(user.get());
+		
+		Post p = postRepository.save(post);
+		
+		URI location  = ServletUriComponentsBuilder.fromCurrentRequest()
+		          .path("/{id}")
+		          .buildAndExpand(p.getId())
+		          .toUri(); 
+		
+		return ResponseEntity.created(location).build();
+		
+	  }
 }

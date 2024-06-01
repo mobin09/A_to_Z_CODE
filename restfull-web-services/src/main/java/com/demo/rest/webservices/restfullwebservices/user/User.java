@@ -64,6 +64,10 @@ public class User {
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", birthDate=" + birthDate + "]";
 	}
+
+	public List<Post> getPosts() {
+		return posts;
+	}
     
     
     

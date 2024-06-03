@@ -1,0 +1,42 @@
+/* const buttonStyle = {
+    fontSize:"16px",
+    backgroundColor:"#00a5ab",
+    width:"100px",
+    margin:"10px",
+    color:"white",
+    padding:"15px",
+    borderRadius:"30px",
+    cursor:"pointer"
+} */
+
+.counterBtn{
+    font-size: 16px;
+    background-color: #00a5ab;
+    width: 100px;
+    margin: 10px;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-width: 5px;
+    border-color: black;
+}
+
+.count{
+    font-size: 150px;
+    padding: 15px;
+}
+
+
+.resetBtn{
+    font-size: 26px;
+    background-color: palevioletred;
+    width: 200px;
+    margin: 10px;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-width: 5px;
+    border-color: black;
+}

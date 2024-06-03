@@ -1,18 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
-import FirstComponent from './components/FirstComponent';
-import FourthComponent from './components/FourthComponet';
-import SecondComponent from './components/SecondComponent';
-import ThirdComponent from './components/ThirdComponent';
+import Counter from './counter/Counter';
 
 function App() {
   return (
     <div className="App">
-        <FirstComponent />
-        <SecondComponent />
-        <ThirdComponent />
-        <FourthComponent />
-
+        <Counter />
     </div>
   );
 }

@@ -1,24 +1,19 @@
 import { useState } from 'react';
-import './Counter.css'
+import './Counter.css';
 import CounterBtn from './CounterBtn';
 
 
 function Counter(props){
-
     const [count, setData] = useState(0);
-
     function increment(by){
         setData(count + by);
     }
-
     function decrement(by){
         setData(count - by);
     }
-
     function reset(){
         setData(0);
     }
-
     return(
         <div> 
              <div>

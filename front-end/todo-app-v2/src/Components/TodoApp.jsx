@@ -8,13 +8,15 @@ import HeaderComponent from "./HeaderComponent";
 
 import FooterComponent from "./FooterComponent";
 import Logout from "./Logout";
+import AuthProvider from "../security/AuthProvider";
 
 function TodoApp(){
     return(
      <div>
-       <HeaderComponent />
-
+       
+      <AuthProvider>
        <BrowserRouter>
+       <HeaderComponent />
            <Routes>
                <Route path="/" element = {<LoginComponent />}></Route>
                <Route path="/login" element = {<LoginComponent />}></Route>
@@ -23,14 +25,11 @@ function TodoApp(){
                <Route path="/logout" element = {<Logout />} />
                <Route path="*" element={<ResourceNotFound />} ></Route>
            </Routes>
+           <FooterComponent />
        </BrowserRouter>
+       </AuthProvider>   
+    </div>
 
-       <FooterComponent />
-       </div>
-        // <div>
-        //     <LoginComponent />
-        //     <WelcomeComponent />
-        // </div>
     );
 }
 

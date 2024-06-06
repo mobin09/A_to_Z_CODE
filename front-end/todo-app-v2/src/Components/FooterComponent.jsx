@@ -1,9 +1,13 @@
 function FooterComponent(){
     return(
-        <div className="footer">
-            <hr />
+        <footer className="footer">
+            <div className="container">
             <h2>Footer</h2>
-        </div>
+            <p>Copyright information</p>
+            </div>
+            
+          
+        </footer>
     );
 }
 

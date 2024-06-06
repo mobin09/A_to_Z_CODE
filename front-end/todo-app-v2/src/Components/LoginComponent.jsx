@@ -2,6 +2,7 @@ import { useState } from "react";
 import SuccessMessage from "./SuccessMessage";
 import ErrorMessage from "./ErrorMessage";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../security/AuthProvider";
 
 function LoginComponent(){
 
@@ -21,10 +22,15 @@ function LoginComponent(){
        //console.log(pass);
    }
 
+   const auth = useAuth();
+
    function handleSubmit(){
       if(user === "dummy" && pass === "dummy"){
+        auth.setAuthenticated(true);
+        auth.setUserData(user);
         setMessage(true);
         navigate(`/welcome/${user}`);
+
       }else{
         setMessage(false);
         navigate("/login");

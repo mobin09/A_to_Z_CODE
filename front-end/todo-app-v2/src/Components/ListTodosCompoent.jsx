@@ -9,10 +9,10 @@ function ListTodosComponent() {
             {id:3, description:"Learn Java Full Stack developer in Advanced", isDone: false, targetDate: targetDate}
             ];
     return(
-        <div>
+        <div className="container">
             <h1>What you want to do ??</h1>
             <div>
-               <table>
+               <table className="table">
                    <thead>
                        <tr>
                            <th>ID</th>

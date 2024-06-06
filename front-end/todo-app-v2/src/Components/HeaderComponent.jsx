@@ -13,7 +13,7 @@ function HeaderComponent(){
    const auth = authContext.isAuthenticated;
 
    function logout(){
-    authContext.setAuthenticated(false);
+    authContext.logout();
    }
   
     return(

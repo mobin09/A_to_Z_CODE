@@ -25,9 +25,7 @@ function LoginComponent(){
    const auth = useAuth();
 
    function handleSubmit(){
-      if(user === "dummy" && pass === "dummy"){
-        auth.setAuthenticated(true);
-        auth.setUserData(user);
+      if(auth.login(user, pass)){
         setMessage(true);
         navigate(`/welcome/${user}`);
 

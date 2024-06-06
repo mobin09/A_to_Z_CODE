@@ -9,11 +9,30 @@ export const useAuth = () => useContext(AuthContext); // making custom hooks use
 
 function AuthProvider({children}){
    //3. put some state in the context
-     const [number, setNumber] = useState(0);
-     const [isAuthenticated, setAuthenticated] = useState(false);
-     const [userData, setUserData] = useState();
+
+   const [number, setNumber] = useState(0);
+   const [isAuthenticated, setAuthenticated] = useState(false);
+   const [userData, setUserData] = useState();
+
+   function login(user, pass){
+    if(user === "dummy" && pass === "dummy"){
+        setAuthenticated(true);
+        setUserData(user);
+        return true;
+
+      }else{
+        setAuthenticated(false);
+        return false;
+      }
+   }
+
+   function logout(){
+      setAuthenticated(false);
+   }
+
+
     return(
-        <AuthContext.Provider value = {{number, isAuthenticated, setAuthenticated, userData, setUserData}}> 
+        <AuthContext.Provider value = {{number, isAuthenticated , userData, setUserData, login, logout}}> 
             {children}
         </AuthContext.Provider>
     );

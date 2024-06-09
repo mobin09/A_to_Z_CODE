@@ -1,13 +1,34 @@
+import { useEffect, useState } from "react";
+import { getAlltodos } from "./API/HelloWorldApiService";
+
 function ListTodosComponent() {
 
     const today = new Date();
     const targetDate = new Date(today.getFullYear() + 2, today.getMonth(), today.getDay());
 
-    const todos = [
-             {id : 1, description:"Learn Data Structure and Algorithm in Advanced", isDone: false, targetDate: targetDate}, 
-             {id:2, description:"Learn AWS", isDone:false, targetDate: targetDate},
-            {id:3, description:"Learn Java Full Stack developer in Advanced", isDone: false, targetDate: targetDate}
-            ];
+     const[todos, setTodos] = useState([]);
+
+     
+    function todosList(){
+        getAlltodos("dummy")
+           .then((response)=> successResponse(response))
+           .catch((error) => errorResponse(error))
+           .finally(()=> console.log("Clean UP Code here"))
+    }
+
+    function successResponse(response){
+        console.log(response.data);
+        setTodos(response.data);  
+    }
+
+    function errorResponse(error){
+        console.log(error);
+    }
+
+    useEffect(()=>{
+        todosList();
+    }, []);
+
     return(
         <div className="container">
             <h1>What you want to do ??</h1>
@@ -28,8 +49,8 @@ function ListTodosComponent() {
                                 <tr key={todo.id}>
                                   <td>{todo.id}</td>
                                   <td>{todo.description}</td>
-                                  <td>{todo.isDone.toString()}</td>
-                                  <td>{todo.targetDate.toDateString()}</td>
+                                  <td>{todo.done.toString()}</td>
+                                  <td>{todo.targetDate}</td>
                                 </tr>
                             ))
                         }

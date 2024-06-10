@@ -8,3 +8,7 @@ export function getAlltodos(username){
     return apiClinet.get(`/users/${username}/todos`);
 }
 
+
+export function deleteTodoList(username, id){
+    return apiClinet.delete(`/users/${username}/todos/${id}`);
+}

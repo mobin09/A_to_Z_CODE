@@ -19,3 +19,20 @@ public class Arr0033 {
         System.out.println(element);
     }
 }
+
+
+
+ interface  A {
+   public void m1();
+ }
+
+
+ interface  B  {
+   public void m1();
+}
+
+
+ class SameHere implements A, B{
+      public void m1(){}
+      //public void m(){}
+}

@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan({"com.demo.testapplication.conditional"})
+@ComponentScan({"com.demo.testapplication.AOP02"})
 public class TestapplicationApplication {
 
 	public static void main(String[] args) {

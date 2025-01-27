@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
-@ComponentScan({"com.demo.testapplication.jdbc"})
+@ComponentScan({"com.demo.testapplication.jpa"})
 @EnableAsync
 public class TestapplicationApplication {
 

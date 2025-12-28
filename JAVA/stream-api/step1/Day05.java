@@ -1,3 +1,5 @@
+package step1;
+
 // https://www.codechef.com/practice/course/arrays/ARRAYS/problems/OPMIN
 
 import java.util.Arrays;

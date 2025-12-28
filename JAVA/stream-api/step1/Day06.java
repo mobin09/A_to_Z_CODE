@@ -1,3 +1,5 @@
+package step1;
+
 public class Day06 {
     public static void main(String[] args){
         int n = 5;

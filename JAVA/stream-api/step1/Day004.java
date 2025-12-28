@@ -1,3 +1,5 @@
+package step1;
+
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.List;

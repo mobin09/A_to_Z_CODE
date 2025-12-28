@@ -27,6 +27,7 @@ public class Day09 {
             ME=[Student1@15db9742]
           }
        */
+
       // 🔹 groupingBy with downstream collector
        Map<String, Long> mapCount= list.stream().collect(
               Collectors.groupingBy(
@@ -42,6 +43,7 @@ public class Day09 {
          ME=1
        }
       */
+
      //🔹 groupingBy + averaging
      Map<String, Double> studentBranchAverageAge =  list.stream().collect(
          Collectors.groupingBy(
@@ -57,6 +59,7 @@ public class Day09 {
           ME=19.0
         }
      */
+
     //🔹 groupingBy + mapping (ADVANCED)
     Map<String, List<String>> branchNameList = list.stream().collect(Collectors.groupingBy(
          Student1::getBranch,
@@ -70,14 +73,22 @@ public class Day09 {
          ME=[Deepak]
         }
     */
+
     //🔹 groupingBy with custom Map
     Map<String, Set<Student1>> mapSet =  list.stream().collect(Collectors.groupingBy(
         Student1::getBranch,
         HashMap::new,
         Collectors.toSet()
     ));
-
     System.out.println(mapSet);
+    /*
+      {
+        CSE=[Student1@73d16e93, Student1@4e0e2f2a], 
+        ECE=[Student1@659e0bfd, Student1@2a139a55], 
+        ME=[Student1@15db9742]
+      }
+    
+    */
 
     }
 }

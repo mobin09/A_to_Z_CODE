@@ -1,0 +1,12 @@
+DO NOT SKIP: Update to Step 28 and Step 29 - Change in Configuration
+Use maxAttempts instead of maxRetryAttempts
+
+resilience4j.retry.instances.sample-api.maxAttempts=5 #NEW
+#resilience4j.retry.instances.sample-api.maxRetryAttempts=5 #OLD
+
+
+
+This is hit by default times
+This is hit by default times
+This is hit by default times
+FallBack Executed

@@ -9,5 +9,12 @@ public class Day001 {
             Integer x = it.next();
             System.out.println(x);
         }
+        /*
+            10
+            4
+            7
+            8
+            9
+        */
     }
 }

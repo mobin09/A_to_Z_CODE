@@ -1,10 +1,10 @@
-package com.spring_security.learn;
+package com.spring_security.learn_spring_security;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LearnApplicationTests {
+class LearnSpringSecurityApplicationTests {
 
 	@Test
 	void contextLoads() {

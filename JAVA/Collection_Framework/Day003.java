@@ -136,12 +136,7 @@ reverseNum.add(50);
 reverseNum.add(20);
 reverseNum.add(30);
 
-IO.println(reverseNum);
-
-
-
-
-
+IO.println(reverseNum); // [50, 30, 20, 10]
     }
 
 }
